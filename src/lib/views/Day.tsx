@@ -149,8 +149,6 @@ const Day = () => {
     return (
       <>
         {/* Header */}
-        {/* Removing this */}
-        {/*
         <TableGrid days={1} sticky="1" stickyNavigation={stickyNavigation}>
           <span className="rs__cell"></span>
           <span
@@ -165,7 +163,6 @@ const Day = () => {
             {renderMultiDayEvents(resourcedEvents)}
           </span>
         </TableGrid>
-         */}
         <TableGrid days={1}>
           {/* Body */}
           {hours.map((h, i) => {
@@ -175,13 +172,13 @@ const Day = () => {
             return (
               <Fragment key={i}>
                 {/* Time Cells */}
-                {/* <span className="rs__cell rs__header rs__time" style={{ height: CELL_HEIGHT }}>
+                <span className="rs__cell rs__header rs__time" style={{ height: CELL_HEIGHT }}>
                   {typeof hourRenderer === "function" ? (
                     <div>{hourRenderer(format(h, hFormat, { locale }))}</div>
                   ) : (
                     <Typography variant="caption">{format(h, hFormat, { locale })}</Typography>
                   )}
-                </span> */}
+                </span>
                 <span className={`rs__cell ${isToday(selectedDate) ? "rs__today_cell" : ""}`}>
                   {/* Events of this day - run once on the top hour column */}
                   {i === 0 && (
