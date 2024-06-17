@@ -1,5 +1,5 @@
 {
-  "name": "@aldabil/react-scheduler",
+  "name": "@deepakdahiya/react-scheduler",
   "version": "2.9.3",
   "description": "React scheduler component based on Material-UI & date-fns",
   "files": [
@@ -23,16 +23,13 @@
     "test:ci": "jest --ci"
   },
   "lint-staged": {
-    "**/*.{ts,js,tsx,jsx}": [
-      "npm run lint"
-    ],
     "**/*.{ts,js,tsx,jsx,json,yml}": [
       "npm run format:write"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aldabil21/react-scheduler.git"
+    "url": "https://github.com/deepakdahiya/react-scheduler.git"
   },
   "keywords": [
     "react",
@@ -44,7 +41,7 @@
   "license": "MIT",
   "homepage": "",
   "bugs": {
-    "url": "https://github.com/aldabil21/react-scheduler/issues"
+    "url": "https://github.com/deepakdahiya/react-scheduler/issues"
   },
   "devDependencies": {
     "@emotion/react": "^11.10.4",
